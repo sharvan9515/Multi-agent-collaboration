@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Local environment variables
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# macOS and system files
+.DS_Store
+Thumbs.db
+
+# Log and cache files
+*.log
+*.out
+*.pid
+*.gz
+.cache/
+*.sqlite3
+
+# Qdrant local volume (if used with docker-compose)
+qdrant_storage/
+
+# Python-specific packaging
+build/
+dist/
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Data
+input_data/*.json
+!input_data/sample_claims.json
+
+# Other IDE configs
+.idea/

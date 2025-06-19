@@ -1,0 +1,34 @@
+# Core RAG-compatible packages
+sentence-transformers==2.2.2
+transformers==4.28.1
+huggingface-hub==0.14.1
+langchain==0.1.17
+
+
+# Text processing & NLP
+spacy==3.7.4
+nltk==3.8.1
+
+# Vector DB & backend
+qdrant-client==1.7.0
+openai==1.25.1
+groq==0.5.0
+
+httpx==0.24.1              # ✅ PATCHED HERE
+
+tiktoken==0.5.2
+
+# Data handling
+pandas==2.2.2
+numpy==1.26.4
+
+# Utilities
+python-dotenv==1.0.1
+rich==13.7.1
+
+# # Jupyter (optional)
+# ipykernel==6.29.4
+# jupyterlab==4.1.6
+
+# SpaCy model (run separately after install)
+# python -m spacy download en_core_web_sm
