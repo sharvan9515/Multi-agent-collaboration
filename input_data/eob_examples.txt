@@ -1,0 +1,1458 @@
+
+Patient Name: Michael Green
+Member ID: 635804886
+Date of Service: 2024-06-27
+Provider: HealthFirst Labs
+Procedure Code: 99213 - Office Visit
+Total Charges: $416
+Allowed Amount: $291
+Insurance Paid: $156
+Copay: $26
+Coinsurance: $39
+Deductible: $70
+Amount You Owe: $260
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 677216899
+Date of Service: 2024-07-26
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $980
+Allowed Amount: $686
+Insurance Paid: $474
+Copay: $53
+Coinsurance: $118
+Deductible: $41
+Amount You Owe: $506
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 942634067
+Date of Service: 2024-04-27
+Provider: CityCare Hospital
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $392
+Allowed Amount: $274
+Insurance Paid: $169
+Copay: $42
+Coinsurance: $42
+Deductible: $21
+Amount You Owe: $223
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 934346637
+Date of Service: 2024-08-21
+Provider: Oakwood Medical Center
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $381
+Allowed Amount: $267
+Insurance Paid: $102
+Copay: $50
+Coinsurance: $25
+Deductible: $90
+Amount You Owe: $279
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 122593735
+Date of Service: 2024-09-10
+Provider: Oakwood Medical Center
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $854
+Allowed Amount: $598
+Insurance Paid: $410
+Copay: $25
+Coinsurance: $102
+Deductible: $61
+Amount You Owe: $444
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 255321869
+Date of Service: 2024-09-26
+Provider: CityCare Hospital
+Procedure Code: 99213 - Office Visit
+Total Charges: $509
+Allowed Amount: $356
+Insurance Paid: $262
+Copay: $22
+Coinsurance: $66
+Deductible: $6
+Amount You Owe: $247
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 762709028
+Date of Service: 2024-11-19
+Provider: CityCare Hospital
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $845
+Allowed Amount: $592
+Insurance Paid: $418
+Copay: $57
+Coinsurance: $105
+Deductible: $12
+Amount You Owe: $427
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 671099848
+Date of Service: 2024-01-03
+Provider: Green Valley Imaging
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $642
+Allowed Amount: $449
+Insurance Paid: $249
+Copay: $49
+Coinsurance: $62
+Deductible: $89
+Amount You Owe: $393
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 308979887
+Date of Service: 2024-02-19
+Provider: Green Valley Imaging
+Procedure Code: 99213 - Office Visit
+Total Charges: $1415
+Allowed Amount: $990
+Insurance Paid: $765
+Copay: $21
+Coinsurance: $191
+Deductible: $13
+Amount You Owe: $650
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 139756792
+Date of Service: 2024-03-15
+Provider: Oakwood Medical Center
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $683
+Allowed Amount: $478
+Insurance Paid: $278
+Copay: $35
+Coinsurance: $70
+Deductible: $95
+Amount You Owe: $405
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 910356017
+Date of Service: 2024-04-07
+Provider: CityCare Hospital
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $607
+Allowed Amount: $425
+Insurance Paid: $261
+Copay: $58
+Coinsurance: $65
+Deductible: $41
+Amount You Owe: $346
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 210388264
+Date of Service: 2024-11-19
+Provider: CityCare Hospital
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1359
+Allowed Amount: $951
+Insurance Paid: $688
+Copay: $27
+Coinsurance: $172
+Deductible: $64
+Amount You Owe: $671
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 570639515
+Date of Service: 2024-05-09
+Provider: HealthFirst Labs
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $586
+Allowed Amount: $410
+Insurance Paid: $278
+Copay: $32
+Coinsurance: $69
+Deductible: $31
+Amount You Owe: $308
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 133309165
+Date of Service: 2024-06-06
+Provider: CityCare Hospital
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $853
+Allowed Amount: $597
+Insurance Paid: $415
+Copay: $55
+Coinsurance: $104
+Deductible: $23
+Amount You Owe: $438
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 817886980
+Date of Service: 2024-05-18
+Provider: Downtown Clinic
+Procedure Code: 99213 - Office Visit
+Total Charges: $625
+Allowed Amount: $438
+Insurance Paid: $278
+Copay: $31
+Coinsurance: $70
+Deductible: $59
+Amount You Owe: $347
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 309061978
+Date of Service: 2024-03-23
+Provider: Oakwood Medical Center
+Procedure Code: 99213 - Office Visit
+Total Charges: $1363
+Allowed Amount: $954
+Insurance Paid: $700
+Copay: $54
+Coinsurance: $175
+Deductible: $25
+Amount You Owe: $663
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 857180163
+Date of Service: 2024-03-13
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $261
+Allowed Amount: $183
+Insurance Paid: $40
+Copay: $42
+Coinsurance: $10
+Deductible: $91
+Amount You Owe: $221
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 290801798
+Date of Service: 2024-06-22
+Provider: Oakwood Medical Center
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $502
+Allowed Amount: $351
+Insurance Paid: $234
+Copay: $24
+Coinsurance: $58
+Deductible: $35
+Amount You Owe: $268
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 605912832
+Date of Service: 2024-10-26
+Provider: Oakwood Medical Center
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1477
+Allowed Amount: $1034
+Insurance Paid: $738
+Copay: $57
+Coinsurance: $184
+Deductible: $55
+Amount You Owe: $739
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 244000692
+Date of Service: 2024-09-22
+Provider: Oakwood Medical Center
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $274
+Allowed Amount: $192
+Insurance Paid: $110
+Copay: $20
+Coinsurance: $27
+Deductible: $35
+Amount You Owe: $164
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 465054249
+Date of Service: 2024-02-26
+Provider: CityCare Hospital
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $427
+Allowed Amount: $299
+Insurance Paid: $182
+Copay: $20
+Coinsurance: $45
+Deductible: $52
+Amount You Owe: $245
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 931450271
+Date of Service: 2024-02-16
+Provider: Oakwood Medical Center
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $1360
+Allowed Amount: $952
+Insurance Paid: $673
+Copay: $38
+Coinsurance: $168
+Deductible: $73
+Amount You Owe: $687
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 769978813
+Date of Service: 2024-06-13
+Provider: Green Valley Imaging
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $468
+Allowed Amount: $328
+Insurance Paid: $214
+Copay: $20
+Coinsurance: $53
+Deductible: $41
+Amount You Owe: $254
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 191072000
+Date of Service: 2024-01-15
+Provider: Downtown Clinic
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $626
+Allowed Amount: $438
+Insurance Paid: $286
+Copay: $26
+Coinsurance: $72
+Deductible: $54
+Amount You Owe: $340
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 257528259
+Date of Service: 2024-03-14
+Provider: Oakwood Medical Center
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1269
+Allowed Amount: $888
+Insurance Paid: $652
+Copay: $30
+Coinsurance: $163
+Deductible: $43
+Amount You Owe: $617
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 469693188
+Date of Service: 2024-06-20
+Provider: Green Valley Imaging
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $393
+Allowed Amount: $275
+Insurance Paid: $172
+Copay: $48
+Coinsurance: $43
+Deductible: $12
+Amount You Owe: $221
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 359282149
+Date of Service: 2024-07-20
+Provider: HealthFirst Labs
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1138
+Allowed Amount: $797
+Insurance Paid: $583
+Copay: $50
+Coinsurance: $146
+Deductible: $18
+Amount You Owe: $555
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 736067942
+Date of Service: 2024-06-25
+Provider: HealthFirst Labs
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $576
+Allowed Amount: $403
+Insurance Paid: $270
+Copay: $30
+Coinsurance: $68
+Deductible: $35
+Amount You Owe: $306
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 121530277
+Date of Service: 2024-11-23
+Provider: CityCare Hospital
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1047
+Allowed Amount: $733
+Insurance Paid: $520
+Copay: $41
+Coinsurance: $130
+Deductible: $42
+Amount You Owe: $527
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Laura White
+Member ID: 840423014
+Date of Service: 2024-03-02
+Provider: HealthFirst Labs
+Procedure Code: 99213 - Office Visit
+Total Charges: $325
+Allowed Amount: $227
+Insurance Paid: $135
+Copay: $57
+Coinsurance: $34
+Deductible: $1
+Amount You Owe: $190
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Laura White
+Member ID: 181482697
+Date of Service: 2024-06-06
+Provider: Downtown Clinic
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1365
+Allowed Amount: $955
+Insurance Paid: $690
+Copay: $59
+Coinsurance: $172
+Deductible: $34
+Amount You Owe: $675
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 268815470
+Date of Service: 2024-09-20
+Provider: HealthFirst Labs
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1025
+Allowed Amount: $718
+Insurance Paid: $527
+Copay: $43
+Coinsurance: $132
+Deductible: $16
+Amount You Owe: $498
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 144958718
+Date of Service: 2024-09-02
+Provider: CityCare Hospital
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1340
+Allowed Amount: $938
+Insurance Paid: $660
+Copay: $42
+Coinsurance: $165
+Deductible: $71
+Amount You Owe: $680
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 917260575
+Date of Service: 2024-03-02
+Provider: Green Valley Imaging
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $556
+Allowed Amount: $389
+Insurance Paid: $248
+Copay: $52
+Coinsurance: $62
+Deductible: $27
+Amount You Owe: $308
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 824182888
+Date of Service: 2024-05-19
+Provider: HealthFirst Labs
+Procedure Code: 99213 - Office Visit
+Total Charges: $656
+Allowed Amount: $459
+Insurance Paid: $270
+Copay: $30
+Coinsurance: $67
+Deductible: $92
+Amount You Owe: $386
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 819214237
+Date of Service: 2024-05-24
+Provider: Green Valley Imaging
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $750
+Allowed Amount: $525
+Insurance Paid: $368
+Copay: $55
+Coinsurance: $92
+Deductible: $10
+Amount You Owe: $382
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 914960402
+Date of Service: 2024-04-05
+Provider: Oakwood Medical Center
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1488
+Allowed Amount: $1042
+Insurance Paid: $741
+Copay: $27
+Coinsurance: $185
+Deductible: $89
+Amount You Owe: $747
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 183130603
+Date of Service: 2024-08-02
+Provider: HealthFirst Labs
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $261
+Allowed Amount: $183
+Insurance Paid: $29
+Copay: $50
+Coinsurance: $7
+Deductible: $97
+Amount You Owe: $232
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 806257779
+Date of Service: 2024-04-21
+Provider: HealthFirst Labs
+Procedure Code: 99213 - Office Visit
+Total Charges: $412
+Allowed Amount: $288
+Insurance Paid: $184
+Copay: $46
+Coinsurance: $46
+Deductible: $12
+Amount You Owe: $228
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 292720385
+Date of Service: 2024-08-25
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $233
+Allowed Amount: $163
+Insurance Paid: $47
+Copay: $51
+Coinsurance: $12
+Deductible: $53
+Amount You Owe: $186
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 644898399
+Date of Service: 2024-11-26
+Provider: Green Valley Imaging
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $566
+Allowed Amount: $396
+Insurance Paid: $266
+Copay: $26
+Coinsurance: $66
+Deductible: $38
+Amount You Owe: $300
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 380555317
+Date of Service: 2024-08-03
+Provider: Downtown Clinic
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1227
+Allowed Amount: $859
+Insurance Paid: $633
+Copay: $25
+Coinsurance: $158
+Deductible: $43
+Amount You Owe: $594
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 817548527
+Date of Service: 2024-04-24
+Provider: CityCare Hospital
+Procedure Code: 99213 - Office Visit
+Total Charges: $883
+Allowed Amount: $618
+Insurance Paid: $430
+Copay: $48
+Coinsurance: $108
+Deductible: $32
+Amount You Owe: $453
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 322957557
+Date of Service: 2024-12-22
+Provider: HealthFirst Labs
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $397
+Allowed Amount: $278
+Insurance Paid: $130
+Copay: $52
+Coinsurance: $33
+Deductible: $63
+Amount You Owe: $267
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 299214450
+Date of Service: 2024-02-09
+Provider: Downtown Clinic
+Procedure Code: 99213 - Office Visit
+Total Charges: $424
+Allowed Amount: $297
+Insurance Paid: $186
+Copay: $37
+Coinsurance: $46
+Deductible: $28
+Amount You Owe: $238
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 950560455
+Date of Service: 2024-11-22
+Provider: Green Valley Imaging
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1220
+Allowed Amount: $854
+Insurance Paid: $628
+Copay: $22
+Coinsurance: $157
+Deductible: $47
+Amount You Owe: $592
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 267714603
+Date of Service: 2024-05-14
+Provider: HealthFirst Labs
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $1208
+Allowed Amount: $846
+Insurance Paid: $586
+Copay: $47
+Coinsurance: $147
+Deductible: $66
+Amount You Owe: $622
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 135730360
+Date of Service: 2024-01-12
+Provider: Oakwood Medical Center
+Procedure Code: 99213 - Office Visit
+Total Charges: $1086
+Allowed Amount: $760
+Insurance Paid: $506
+Copay: $34
+Coinsurance: $127
+Deductible: $93
+Amount You Owe: $580
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 881665050
+Date of Service: 2024-02-01
+Provider: Green Valley Imaging
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $1020
+Allowed Amount: $714
+Insurance Paid: $466
+Copay: $41
+Coinsurance: $117
+Deductible: $90
+Amount You Owe: $554
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 847929267
+Date of Service: 2024-03-12
+Provider: Oakwood Medical Center
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $478
+Allowed Amount: $335
+Insurance Paid: $150
+Copay: $49
+Coinsurance: $38
+Deductible: $98
+Amount You Owe: $328
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Laura White
+Member ID: 262877567
+Date of Service: 2024-02-13
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $253
+Allowed Amount: $177
+Insurance Paid: $77
+Copay: $34
+Coinsurance: $19
+Deductible: $47
+Amount You Owe: $176
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Laura White
+Member ID: 409783225
+Date of Service: 2024-11-14
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1171
+Allowed Amount: $820
+Insurance Paid: $587
+Copay: $45
+Coinsurance: $147
+Deductible: $41
+Amount You Owe: $584
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 232659385
+Date of Service: 2024-01-06
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $837
+Allowed Amount: $586
+Insurance Paid: $422
+Copay: $23
+Coinsurance: $105
+Deductible: $36
+Amount You Owe: $415
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 470879119
+Date of Service: 2024-02-09
+Provider: HealthFirst Labs
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $1250
+Allowed Amount: $875
+Insurance Paid: $655
+Copay: $32
+Coinsurance: $164
+Deductible: $24
+Amount You Owe: $595
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 602197822
+Date of Service: 2024-11-07
+Provider: Oakwood Medical Center
+Procedure Code: 99213 - Office Visit
+Total Charges: $330
+Allowed Amount: $231
+Insurance Paid: $86
+Copay: $37
+Coinsurance: $21
+Deductible: $87
+Amount You Owe: $244
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 469374624
+Date of Service: 2024-10-20
+Provider: Oakwood Medical Center
+Procedure Code: 99213 - Office Visit
+Total Charges: $879
+Allowed Amount: $615
+Insurance Paid: $404
+Copay: $57
+Coinsurance: $101
+Deductible: $53
+Amount You Owe: $475
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 364022890
+Date of Service: 2024-05-17
+Provider: Green Valley Imaging
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $426
+Allowed Amount: $298
+Insurance Paid: $180
+Copay: $44
+Coinsurance: $45
+Deductible: $29
+Amount You Owe: $246
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: David Black
+Member ID: 331596400
+Date of Service: 2024-03-21
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $947
+Allowed Amount: $663
+Insurance Paid: $461
+Copay: $46
+Coinsurance: $115
+Deductible: $41
+Amount You Owe: $486
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 723489591
+Date of Service: 2024-05-21
+Provider: HealthFirst Labs
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $1470
+Allowed Amount: $1029
+Insurance Paid: $760
+Copay: $55
+Coinsurance: $190
+Deductible: $24
+Amount You Owe: $710
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 315327644
+Date of Service: 2024-12-08
+Provider: Downtown Clinic
+Procedure Code: 99213 - Office Visit
+Total Charges: $1447
+Allowed Amount: $1013
+Insurance Paid: $747
+Copay: $21
+Coinsurance: $187
+Deductible: $58
+Amount You Owe: $700
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 779733924
+Date of Service: 2024-02-26
+Provider: Downtown Clinic
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $1003
+Allowed Amount: $702
+Insurance Paid: $528
+Copay: $40
+Coinsurance: $132
+Deductible: $2
+Amount You Owe: $475
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 374097541
+Date of Service: 2024-05-03
+Provider: CityCare Hospital
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1381
+Allowed Amount: $967
+Insurance Paid: $729
+Copay: $36
+Coinsurance: $182
+Deductible: $20
+Amount You Owe: $652
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 663451282
+Date of Service: 2024-03-14
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1121
+Allowed Amount: $785
+Insurance Paid: $571
+Copay: $26
+Coinsurance: $143
+Deductible: $45
+Amount You Owe: $550
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Jane Smith
+Member ID: 136459459
+Date of Service: 2024-03-20
+Provider: Oakwood Medical Center
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $228
+Allowed Amount: $160
+Insurance Paid: $35
+Copay: $58
+Coinsurance: $9
+Deductible: $58
+Amount You Owe: $193
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 740873141
+Date of Service: 2024-04-21
+Provider: Oakwood Medical Center
+Procedure Code: 99213 - Office Visit
+Total Charges: $1338
+Allowed Amount: $937
+Insurance Paid: $674
+Copay: $23
+Coinsurance: $168
+Deductible: $72
+Amount You Owe: $664
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 811321162
+Date of Service: 2024-04-03
+Provider: Downtown Clinic
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $1159
+Allowed Amount: $811
+Insurance Paid: $546
+Copay: $38
+Coinsurance: $137
+Deductible: $90
+Amount You Owe: $613
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 346826787
+Date of Service: 2024-05-17
+Provider: Green Valley Imaging
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $457
+Allowed Amount: $320
+Insurance Paid: $198
+Copay: $34
+Coinsurance: $49
+Deductible: $39
+Amount You Owe: $259
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 829550274
+Date of Service: 2024-05-21
+Provider: HealthFirst Labs
+Procedure Code: 99213 - Office Visit
+Total Charges: $722
+Allowed Amount: $505
+Insurance Paid: $303
+Copay: $32
+Coinsurance: $76
+Deductible: $94
+Amount You Owe: $419
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 280462060
+Date of Service: 2024-02-24
+Provider: CityCare Hospital
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $742
+Allowed Amount: $519
+Insurance Paid: $322
+Copay: $46
+Coinsurance: $80
+Deductible: $71
+Amount You Owe: $420
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 848034555
+Date of Service: 2024-07-07
+Provider: Downtown Clinic
+Procedure Code: 99213 - Office Visit
+Total Charges: $437
+Allowed Amount: $306
+Insurance Paid: $162
+Copay: $35
+Coinsurance: $40
+Deductible: $69
+Amount You Owe: $275
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Michael Green
+Member ID: 797104710
+Date of Service: 2024-11-18
+Provider: HealthFirst Labs
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $677
+Allowed Amount: $474
+Insurance Paid: $318
+Copay: $41
+Coinsurance: $79
+Deductible: $36
+Amount You Owe: $359
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 336823895
+Date of Service: 2024-10-22
+Provider: Downtown Clinic
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1393
+Allowed Amount: $975
+Insurance Paid: $698
+Copay: $26
+Coinsurance: $174
+Deductible: $77
+Amount You Owe: $695
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Laura White
+Member ID: 173932218
+Date of Service: 2024-11-22
+Provider: CityCare Hospital
+Procedure Code: 99213 - Office Visit
+Total Charges: $1010
+Allowed Amount: $707
+Insurance Paid: $485
+Copay: $59
+Coinsurance: $121
+Deductible: $42
+Amount You Owe: $525
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Laura White
+Member ID: 537079627
+Date of Service: 2024-06-17
+Provider: Oakwood Medical Center
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $400
+Allowed Amount: $280
+Insurance Paid: $136
+Copay: $47
+Coinsurance: $34
+Deductible: $63
+Amount You Owe: $264
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 940973601
+Date of Service: 2024-06-28
+Provider: Green Valley Imaging
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $1287
+Allowed Amount: $901
+Insurance Paid: $621
+Copay: $36
+Coinsurance: $155
+Deductible: $89
+Amount You Owe: $666
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 829307901
+Date of Service: 2024-08-27
+Provider: HealthFirst Labs
+Procedure Code: 93000 - Electrocardiogram
+Total Charges: $406
+Allowed Amount: $284
+Insurance Paid: $126
+Copay: $27
+Coinsurance: $32
+Deductible: $99
+Amount You Owe: $280
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Emily Stone
+Member ID: 312461848
+Date of Service: 2024-11-05
+Provider: Oakwood Medical Center
+Procedure Code: 80053 - Metabolic Panel
+Total Charges: $987
+Allowed Amount: $691
+Insurance Paid: $524
+Copay: $27
+Coinsurance: $131
+Deductible: $9
+Amount You Owe: $463
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: Alice Brown
+Member ID: 110824146
+Date of Service: 2024-09-18
+Provider: HealthFirst Labs
+Procedure Code: 99213 - Office Visit
+Total Charges: $1366
+Allowed Amount: $956
+Insurance Paid: $720
+Copay: $53
+Coinsurance: $180
+Deductible: $3
+Amount You Owe: $646
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 114312093
+Date of Service: 2024-02-06
+Provider: Oakwood Medical Center
+Procedure Code: 70450 - CT Head/Brain
+Total Charges: $211
+Allowed Amount: $148
+Insurance Paid: $70
+Copay: $54
+Coinsurance: $17
+Deductible: $7
+Amount You Owe: $141
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Patient Name: John Doe
+Member ID: 932754168
+Date of Service: 2024-11-16
+Provider: Oakwood Medical Center
+Procedure Code: 85025 - Complete Blood Count
+Total Charges: $1125
+Allowed Amount: $788
+Insurance Paid: $560
+Copay: $47
+Coinsurance: $140
+Deductible: $41
+Amount You Owe: $565
+
+Explanation:
+Your insurance plan covers a portion of the allowed amount after the deductible is met. You are responsible for copay, deductible, and coinsurance, based on your benefits plan.
+
+---
+
+Health insurance policies outline the benefits and obligations of both the insurer and the policyholder. They specify covered services, exclusions, copayment rules, coinsurance percentages, deductible thresholds, and the out-of-pocket maximum. For example, a typical PPO plan might cover 80% of approved charges after the deductible, while requiring a $30 copay for office visits. Policyholders are encouraged to verify whether a provider is in-network to avoid higher charges, and should understand thei...
+
+---
+
+Health insurance policies outline the benefits and obligations of both the insurer and the policyholder. They specify covered services, exclusions, copayment rules, coinsurance percentages, deductible thresholds, and the out-of-pocket maximum. For example, a typical PPO plan might cover 80% of approved charges after the deductible, while requiring a $30 copay for office visits. Policyholders are encouraged to verify whether a provider is in-network to avoid higher charges, and should understand thei...
+
+---
+
+Health insurance policies outline the benefits and obligations of both the insurer and the policyholder. They specify covered services, exclusions, copayment rules, coinsurance percentages, deductible thresholds, and the out-of-pocket maximum. For example, a typical PPO plan might cover 80% of approved charges after the deductible, while requiring a $30 copay for office visits. Policyholders are encouraged to verify whether a provider is in-network to avoid higher charges, and should understand thei...
+
+---
+
+Health insurance policies outline the benefits and obligations of both the insurer and the policyholder. They specify covered services, exclusions, copayment rules, coinsurance percentages, deductible thresholds, and the out-of-pocket maximum. For example, a typical PPO plan might cover 80% of approved charges after the deductible, while requiring a $30 copay for office visits. Policyholders are encouraged to verify whether a provider is in-network to avoid higher charges, and should understand thei...
+
+---
+
+Health insurance policies outline the benefits and obligations of both the insurer and the policyholder. They specify covered services, exclusions, copayment rules, coinsurance percentages, deductible thresholds, and the out-of-pocket maximum. For example, a typical PPO plan might cover 80% of approved charges after the deductible, while requiring a $30 copay for office visits. Policyholders are encouraged to verify whether a provider is in-network to avoid higher charges, and should understand thei...
