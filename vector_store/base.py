@@ -1,4 +1,4 @@
-# vector_search_engine/vector_store.py
+# vector_store/base.py
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 from qdrant_client.http.exceptions import UnexpectedResponse

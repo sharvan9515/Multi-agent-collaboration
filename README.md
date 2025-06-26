@@ -28,8 +28,8 @@ RAG_HEITAA/
 │   └── embedder.py              # Converts user queries into vector embeddings
 ├── language_model/
 │   └── lm.py                    # GROQ/OpenAI API interface
-├── vector_search_engine/
-│   └── vector_store.py          # Qdrant-based vector DB wrapper
+├── vector_store/
+│   └── base.py                  # Qdrant-based vector DB wrapper
 ├── main.py                      # Entry point CLI chatbot
 └── .env                         # API keys for GROQ (not committed)
 ```
@@ -112,7 +112,7 @@ Assistant: The waiting period for diabetes is typically...
 To add documents to Qdrant:
 
 ```python
-from vector_search_engine.vector_store import index_document
+from vector_store.base import index_document
 
 index_document(
     doc_id=1,
