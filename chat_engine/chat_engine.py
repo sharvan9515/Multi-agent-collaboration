@@ -37,4 +37,5 @@ class ChatEngine:
         # Step 4: Build final prompt and generate answer
         prompt = self.prompt_assembler(user_query, context_text,history)
         response = self.llm(prompt)
+        self.session.add_assistant_message(response)
         return response
