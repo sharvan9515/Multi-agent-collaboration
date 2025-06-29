@@ -24,10 +24,17 @@ RAG_HEITAA/
 │       ├── prompt_assembler.py  # Builds prompts from chat + retrieved docs
 │       ├── retriever.py         # Vector-based document retriever
 │       └── session.py           # Maintains multi-turn chat history
+├── agents/                      # Agent implementations
+│   ├── base.py                  # Base agent interface
+│   └── rag_agent.py             # RAG agent using ChatEngine
+├── core/
+│   └── workflow.py              # Multi‑agent workflow orchestrator
+├── utils/
+│   └── logger.py                # Common logging utility
 ├── embedding/
 │   └── embedder.py              # Converts user queries into vector embeddings
 ├── language_model/
-│   └── lm.py                    # GROQ/OpenAI API interface
+│   └── language_model.py        # GROQ/OpenAI API interface
 ├── vector_store/
 │   └── base.py                  # Qdrant-based vector DB wrapper
 ├── main.py                      # Entry point CLI chatbot
