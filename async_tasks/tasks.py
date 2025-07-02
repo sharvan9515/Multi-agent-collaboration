@@ -1,9 +1,11 @@
 from celery import Celery
+import os
 from embedding.embedder import embed_text
 from parsers.text_parser import parse_txt_folder
 from vector_store.base import index_document, init_collection
 
-app = Celery('rag_tasks', broker='redis://redis:6379/0')
+broker_url = os.getenv("CELERY_BROKER_URL", "redis://redis:6379/0")
+app = Celery('rag_tasks', broker=broker_url)
 
 @app.task
 def ingest_folder(folder_path: str):

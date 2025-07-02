@@ -109,7 +109,9 @@ helm install rag-heitaa helm
 ```
 
 ### 🚀 Async Ingestion
-Start a Celery worker to process heavy ingestion jobs:
+Start a Celery worker to process heavy ingestion jobs. The broker URL can be
+overridden with the `CELERY_BROKER_URL` environment variable (defaults to
+`redis://redis:6379/0`):
 ```bash
 celery -A async_tasks.tasks worker --loglevel=info
 ```
