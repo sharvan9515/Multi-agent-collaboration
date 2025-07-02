@@ -1,8 +1,11 @@
 # language_model/lm.py
 import os
+import logging
 from dotenv import load_dotenv
 import requests
 from .base import LanguageModel
+
+logger = logging.getLogger(__name__)
 
 # load_dotenv()
 # api_key = os.getenv("OPENAI_API_KEY")
@@ -38,7 +41,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 if not GROQ_API_KEY:
     raise ValueError("GROQ_API_KEY not found in environment variables. Please set it in your .env file.")
 
-print("🔑 GROQ API KEY:", GROQ_API_KEY[:10], "***")
+logger.debug("GROQ API key loaded from environment variables")
 
 
 class GroqLanguageModel(LanguageModel):
