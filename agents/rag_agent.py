@@ -18,5 +18,8 @@ class RAGAgent(Agent):
             prompt_assembler=default_prompt_assembler,
         )
 
-    def act(self, message: str) -> str:
-        return self.engine.answer_query(message)
+    def act(self, message: str, context: dict) -> tuple[str, dict]:
+        """Answer a question and append the response to context messages."""
+        response = self.engine.answer_query(message)
+        context.setdefault("messages", []).append({"role": "assistant", "content": response})
+        return response, context

@@ -5,9 +5,16 @@ from sentence_transformers import SentenceTransformer
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 # For BioBERT, one could use a HuggingFace model like "pritamdeka/BioBERT-mnli-snli" or similar if available
 
-model = SentenceTransformer(EMBEDDING_MODEL)
+_model = None
+
+
+def _get_model() -> SentenceTransformer:
+    global _model
+    if _model is None:
+        _model = SentenceTransformer(EMBEDDING_MODEL)
+    return _model
 
 def embed_text(text: str):
     """Generate a vector embedding for the given text."""
-    # Ensure text is a string (or a list of strings if batch)
+    model = _get_model()
     return model.encode(text)
