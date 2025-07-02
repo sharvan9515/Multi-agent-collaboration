@@ -2,12 +2,14 @@
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 from qdrant_client.http.exceptions import UnexpectedResponse
+import os
 
 COLLECTION_NAME = "claims_collection"
 VECTOR_DIMENSION = 384
 DISTANCE_METRIC = Distance.COSINE
 
-client = QdrantClient(url="http://localhost:6333")
+QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
+client = QdrantClient(url=QDRANT_URL)
 
 def init_collection():
     existing = client.get_collections().collections

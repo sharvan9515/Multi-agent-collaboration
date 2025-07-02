@@ -78,6 +78,18 @@ docker run -p 6333:6333 qdrant/qdrant
 
 Or use [Qdrant Cloud](https://qdrant.tech/).
 
+### 🐳 Docker Compose
+
+A `docker-compose.yml` is provided to launch the app together with a Qdrant
+service. Build and start both containers with:
+
+```bash
+docker compose up --build
+```
+
+The application container will connect to the `qdrant` service automatically
+using the `QDRANT_URL` environment variable.
+
 ---
 
 ## 🧠 How It Works
