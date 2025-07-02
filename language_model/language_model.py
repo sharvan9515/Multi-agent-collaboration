@@ -1,8 +1,8 @@
 # language_model/lm.py
 import os
-from openai import OpenAI
 from dotenv import load_dotenv
 import requests
+from .base import LanguageModel
 
 # load_dotenv()
 # api_key = os.getenv("OPENAI_API_KEY")
@@ -40,27 +40,39 @@ if not GROQ_API_KEY:
 
 print("🔑 GROQ API KEY:", GROQ_API_KEY[:10], "***")
 
-GROQ_MODEL = "llama3-8b-8192"  # Or try mixtral-8x7b-32768 or gemma-7b-it
+
+class GroqLanguageModel(LanguageModel):
+    """Language model wrapper around the Groq API."""
+
+    def __init__(self, model: str = "llama3-8b-8192"):
+        self.model = model
+
+    def generate(self, messages: list) -> str:
+        try:
+            url = "https://api.groq.com/openai/v1/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json",
+            }
+            body = {
+                "model": self.model,
+                "messages": messages,
+                "max_tokens": 512,
+                "temperature": 0.2,
+            }
+
+            response = requests.post(url, headers=headers, json=body)
+            response.raise_for_status()
+            result = response.json()
+            answer = result["choices"][0]["message"]["content"]
+            return answer.strip()
+        except Exception as e:
+            return f"❌ Error generating answer: {e}"
+
+
+_default_lm = GroqLanguageModel()
+
 
 def generate_answer(messages: list) -> str:
-    """Call Groq API to generate an answer given a prompt (context + question)."""
-    try:
-        url = "https://api.groq.com/openai/v1/chat/completions"
-        headers = {
-            "Authorization": f"Bearer {GROQ_API_KEY}",
-            "Content-Type": "application/json"
-        }
-        body = {
-            "model": GROQ_MODEL,
-            "messages": messages,
-            "max_tokens": 512,
-            "temperature": 0.2
-        }
-
-        response = requests.post(url, headers=headers, json=body)
-        response.raise_for_status()
-        result = response.json()
-        answer = result["choices"][0]["message"]["content"]
-        return answer.strip()
-    except Exception as e:
-        return f"❌ Error generating answer: {e}"
+    """Compatibility helper that delegates to the default language model."""
+    return _default_lm.generate(messages)
