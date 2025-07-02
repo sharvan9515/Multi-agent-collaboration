@@ -6,23 +6,26 @@ from language_model.language_model import generate_answer
 from vector_store.base import init_collection  # ✅ Make sure this is imported!
 from parsers.text_parser import parse_txt_folder  # ✅ Import parser
 from vector_store.base import index_document
+
+
+def ingest_input_data():
+    """Initialize collection and index documents from the input folder."""
+    init_collection()
+    print("📚 Parsing and indexing text documents from 'input_data/'...")
+    docs = parse_txt_folder("input_data/")  # Customize folder path if needed
+    for idx, doc in enumerate(docs):
+        vector = embed_text(doc["text"])
+        index_document(
+            doc_id=idx,
+            vector=vector,
+            payload={"text": doc["text"], "source": doc["source"]},
+        )
 # main.py - Entry point for the RAG_HEITAA Health Assistant
 
 
 
-init_collection()
-print("📚 Parsing and indexing text documents from 'input_data/'...")
-
-docs = parse_txt_folder("input_data/")  # Customize folder path if needed
-
-for idx, doc in enumerate(docs):
-    vector = embed_text(doc["text"])
-    index_document(doc_id=idx, vector=vector, payload={"text": doc["text"], "source": doc["source"]})
-
-
-
-
 if __name__ == "__main__":
+    ingest_input_data()
     engine = ChatEngine(
         retriever=default_retriever,
         embedder=embed_text,
