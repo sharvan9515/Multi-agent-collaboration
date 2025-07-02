@@ -4,7 +4,7 @@ The following tasks are derived from [enterprise_roadmap.md](enterprise_roadmap.
 Check completed items when implemented.
 
 ## Scalable Backend Architecture
-- [ ] Containerization: Provide Docker images with Qdrant pre-configured
+- [✅ ] Containerization: Provide Docker images with Qdrant pre-configured
 - [ ] Kubernetes Support: Helm charts for clustering
 - [ ] Async Processing for heavy ingestion or parsing
 
