@@ -73,6 +73,10 @@ pip install tokenizers --prefer-binary
 The `requirements.txt` file already pins a compatible version
 (`tokenizers==0.13.3`) to avoid these build issues.
 
+If the SentenceTransformer model cannot be downloaded (e.g. when running
+offline), the application will fall back to deterministic random embeddings so
+that you can still test the pipeline.
+
 ### 3. Set Your API Key
 
 Create a `.env` file in the root folder:
@@ -101,7 +105,9 @@ docker compose up --build
 ```
 
 The application container will connect to the `qdrant` service automatically
-using the `QDRANT_URL` environment variable.
+using the `QDRANT_URL` environment variable. If this variable is not set or the
+server cannot be reached, RAG_HEITAA will automatically start an in-memory
+Qdrant instance for local development.
 ### ☸️ Kubernetes Deployment
 A Helm chart is available in `helm/` for running the API, Qdrant, and workers on Kubernetes. Install with:
 ```bash
