@@ -27,7 +27,7 @@ def stub_external_modules(monkeypatch):
         def __init__(self, payload):
             self.payload = payload
     base.DummyResult = DummyResult
-    base.query_vector = lambda vec, top_k=5: [DummyResult({"text": "ctx"})]
+    base.query_vector = lambda vec, top_k=5, filters=None: [DummyResult({"text": "ctx"})]
     vector_store.base = base
     monkeypatch.setitem(sys.modules, "vector_store", vector_store)
     monkeypatch.setitem(sys.modules, "vector_store.base", base)

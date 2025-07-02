@@ -9,12 +9,12 @@ Check completed items when implemented.
 - [x] Async Processing for heavy ingestion or parsing
 
 ## Extensible Modular Design
-- [ ] Pluggable Components for embeddings, language models and vector stores
-- [ ] Multi-Strategy Retrieval combining vector search and metadata filters
+- [x] Pluggable Components for embeddings, language models and vector stores
+- [x] Multi-Strategy Retrieval combining vector search and metadata filters
 
 ## Enterprise-Grade APIs
-- [ ] REST/GraphQL Endpoints with authentication
-- [ ] Versioned APIs for backward compatibility
+- [x] REST/GraphQL Endpoints with authentication
+- [x] Versioned APIs for backward compatibility
 
 ## Robust Observability
 - [x] Structured Logging with correlation IDs

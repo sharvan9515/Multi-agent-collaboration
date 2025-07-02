@@ -9,8 +9,11 @@ RAG_HEITAA is a **modular, production-ready Retrieval-Augmented Generation (RAG)
 ✅ Context-aware, multi-turn healthcare Q&A  
 ✅ Modular vector store layer (Qdrant by default, extendable to Pinecone, FAISS, etc.)  
 ✅ GROQ OpenAI-compatible LLM support  
-✅ Clean plug-and-play ingestion and retrieval interface  
-✅ Pythonic `ChatEngine` orchestrator  
+✅ Clean plug-and-play ingestion and retrieval interface
+✅ Pythonic `ChatEngine` orchestrator
+✅ Pluggable embeddings/LLMs/vector stores
+✅ Multi-strategy retrieval with metadata filters
+✅ Versioned REST & GraphQL API with token auth
 
 ---
 
@@ -174,6 +177,19 @@ response = coordinator.run("Patient John Doe was admitted yesterday.")
 
 Each agent receives the current message and can store results in the shared
 `context` for the next agent.
+
+---
+
+## 🔌 API Server
+
+Start the FastAPI server with GraphQL and REST endpoints:
+
+```bash
+uvicorn api.app:app --reload
+```
+
+Authenticate requests using the `API_TOKEN` environment variable. Endpoints are
+versioned under `/v1`.
 
 ---
 
