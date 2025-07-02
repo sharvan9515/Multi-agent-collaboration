@@ -9,8 +9,17 @@ RAG_HEITAA is a **modular, production-ready Retrieval-Augmented Generation (RAG)
 ✅ Context-aware, multi-turn healthcare Q&A  
 ✅ Modular vector store layer (Qdrant by default, extendable to Pinecone, FAISS, etc.)  
 ✅ GROQ OpenAI-compatible LLM support  
-✅ Clean plug-and-play ingestion and retrieval interface  
-✅ Pythonic `ChatEngine` orchestrator  
+✅ Clean plug-and-play ingestion and retrieval interface
+✅ Pythonic `ChatEngine` orchestrator
+
+---
+
+## 🏃 Quick Start (Layman's Guide)
+
+1. **Install Python** – download Python 3.10 or newer from [python.org](https://python.org) and install it.
+2. **Download Docker** – needed to run the free Qdrant database locally.
+3. **Open a terminal** (Command Prompt on Windows, Terminal on Mac/Linux).
+4. **Run the commands in the next section** to set up and start the assistant.
 
 ---
 
@@ -59,6 +68,8 @@ python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
+
+> **Note**: The project is configured to run entirely on CPU. No special GPU is required.
 
 ### 3. Set Your API Key
 
