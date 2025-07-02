@@ -6,16 +6,31 @@ services:
       - "6333:6333"
     volumes:
       - qdrant_data:/qdrant/storage
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
   app:
     build: .
     depends_on:
       - qdrant
+      - redis
     environment:
       - QDRANT_URL=http://qdrant:6333
+      - CELERY_BROKER_URL=redis://redis:6379/0
     volumes:
       - ./input_data:/app/input_data
     stdin_open: true
     tty: true
     command: ["python", "main.py"]
+  worker:
+    build: .
+    depends_on:
+      - qdrant
+      - redis
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+      - CELERY_BROKER_URL=redis://redis:6379/0
+    command: ["celery", "-A", "async_tasks.tasks", "worker", "--loglevel=info"]
 volumes:
   qdrant_data:
