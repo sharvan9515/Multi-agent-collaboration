@@ -13,9 +13,9 @@ class MultiAgentCoordinator:
 
     def run(self, message: str) -> str:
         """Send the message through each agent with shared context."""
-        log(f"Starting multi-agent run with input: {message}")
+        cid = log(f"Starting multi-agent run with input: {message}")
         msg = message
         for agent in self.agents:
             msg, self.context = agent.act(msg, self.context)
-            log(f"{agent.__class__.__name__} produced: {msg}")
+            log(f"{agent.__class__.__name__} produced: {msg}", cid)
         return msg
