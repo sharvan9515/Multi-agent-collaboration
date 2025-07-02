@@ -63,6 +63,16 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
 
+**Windows note:** The `tokenizers` package may fail to build from source on
+some Rust toolchains. If this happens, install the precompiled wheel with:
+
+```bash
+pip install tokenizers --prefer-binary
+```
+
+The `requirements.txt` file already pins a compatible version
+(`tokenizers==0.13.3`) to avoid these build issues.
+
 ### 3. Set Your API Key
 
 Create a `.env` file in the root folder:
