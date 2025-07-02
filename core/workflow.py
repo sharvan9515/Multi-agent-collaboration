@@ -12,10 +12,10 @@ class Workflow:
 
     def run(self, message: str) -> str:
         """Send the message through each agent in sequence with shared context."""
-        log(f"Starting workflow with input: {message}")
+        cid = log(f"Starting workflow with input: {message}")
         context = {}
         msg = message
         for agent in self.agents:
             msg, context = agent.act(msg, context)
-            log(f"{agent.__class__.__name__} produced: {msg}")
+            log(f"{agent.__class__.__name__} produced: {msg}", cid)
         return msg
