@@ -219,7 +219,7 @@ versioned under `/v1`.
 
 You can manually test:
 ```bash
-python -c "from language_model.lm import generate_answer; print(generate_answer([...]))"
+python -c "from language_model.language_model import generate_answer; print(generate_answer([...]))"
 ```
 
 Or run `main.py` and ask natural questions.
@@ -229,7 +229,7 @@ Or run `main.py` and ask natural questions.
 ## 🔄 Extensibility
 
 - Swap vector store in `vector_store/base.py` with FAISS/Pinecone.
-- Switch from GROQ to OpenAI or Claude by modifying `lm.py`.
+- Switch from GROQ to OpenAI or Claude by modifying `language_model.py`.
 - Add Streamlit/Gradio frontend easily using `ChatEngine`.
 
 ---
