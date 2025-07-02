@@ -132,6 +132,27 @@ index_document(
 
 ---
 
+## 🤖 Multi-Agent Usage
+
+`MultiAgentCoordinator` lets multiple agents collaborate using a shared
+`context` dictionary. Combine the provided `DeidAgent`, `SummaryAgent`, and
+`RAGAgent` as needed:
+
+```python
+from agents.deid_agent import DeidAgent
+from agents.summary_agent import SummaryAgent
+from agents.rag_agent import RAGAgent
+from core.multi_agent import MultiAgentCoordinator
+
+coordinator = MultiAgentCoordinator([DeidAgent(), SummaryAgent(), RAGAgent()])
+response = coordinator.run("Patient John Doe was admitted yesterday.")
+```
+
+Each agent receives the current message and can store results in the shared
+`context` for the next agent.
+
+---
+
 ## 🧪 Testing
 
 You can manually test:
