@@ -167,7 +167,11 @@ index_document(
 )
 ```
 
-> 🔜 Coming soon: `scripts/ingest_folder.py` for PDF/text bulk ingestion.
+For bulk ingestion of a folder of `.txt` files:
+
+```bash
+python scripts/ingest_folder.py path/to/folder
+```
 
 ---
 
