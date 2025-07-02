@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rag-worker
+spec:
+  replicas: {{ .Values.worker.replicaCount }}
+  selector:
+    matchLabels:
+      app: rag-worker
+  template:
+    metadata:
+      labels:
+        app: rag-worker
+    spec:
+      containers:
+        - name: worker
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          command: ["celery","-A","async_tasks.tasks","worker","--loglevel=info"]
+          env:
+            - name: QDRANT_URL
+              value: http://qdrant:6333

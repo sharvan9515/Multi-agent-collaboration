@@ -89,6 +89,18 @@ docker compose up --build
 
 The application container will connect to the `qdrant` service automatically
 using the `QDRANT_URL` environment variable.
+### ☸️ Kubernetes Deployment
+A Helm chart is available in `helm/` for running the API, Qdrant, and workers on Kubernetes. Install with:
+```bash
+helm install rag-heitaa helm
+```
+
+### 🚀 Async Ingestion
+Start a Celery worker to process heavy ingestion jobs:
+```bash
+celery -A async_tasks.tasks worker --loglevel=info
+```
+
 
 ---
 

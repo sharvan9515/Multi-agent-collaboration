@@ -25,6 +25,8 @@ numpy==1.26.4
 # Utilities
 python-dotenv==1.0.1
 rich==13.7.1
+celery==5.3.6
+redis==5.0.1
 
 # # Jupyter (optional)
 # ipykernel==6.29.4

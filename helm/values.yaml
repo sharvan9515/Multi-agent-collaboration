@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: rag-heitaa
+  tag: latest
+
+qdrant:
+  image: qdrant/qdrant:latest
+  replicaCount: 1
+
+worker:
+  replicaCount: 1
