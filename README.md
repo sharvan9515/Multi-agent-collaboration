@@ -214,12 +214,19 @@ After starting the server, open `http://localhost:8000/` in your browser to use
 the bundled voice interface. Authenticate requests using the `API_TOKEN`
 environment variable. Endpoints are versioned under `/v1`.
 
-## 🌐 Voice Frontend
+## 🎙️ Voice Assistant Frontend
 
-With the server running, navigate to `http://localhost:8000/` and click
-**Start Speaking**. Grant microphone access and your speech will be transcribed
-via the Web Speech API, sent to `/v1/chat`, and the response will be displayed
-and spoken aloud using `speechSynthesis`.
+First start the FastAPI server:
+
+```bash
+uvicorn api.app:app --reload
+```
+
+Then open `http://localhost:8000/` in a compatible browser (Chrome or Edge).
+Click **Start Speaking** and grant microphone permission when prompted. Your
+speech will be transcribed via the Web Speech API, sent to `/v1/chat`, and the
+response will be displayed and read aloud using `speechSynthesis`. Safari and
+Firefox do not fully support the required APIs.
 ---
 
 ## 🧪 Testing
