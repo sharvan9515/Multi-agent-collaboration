@@ -1,5 +1,6 @@
 import os
 from fastapi import Depends, FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 
@@ -21,6 +22,7 @@ engine = ChatEngine(
 )
 
 app = FastAPI(title="RAG_HEITAA API", version="1.0")
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
 
 def authenticate(creds: HTTPAuthorizationCredentials = Depends(security)):
