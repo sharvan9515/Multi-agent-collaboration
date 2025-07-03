@@ -1,15 +1,47 @@
-"""
-chat_engine.py - Orchestrates the RAG process: embedding, retrieval, and generation
-"""
-from chat_engine.modules.session import ChatSession
+"""Chat engine orchestration logic.
 
-from embedding.embedder import embed_text
-from vector_store.base import query_vector
-from language_model.language_model import generate_answer
+The original implementation imported heavy dependencies at module import time.
+This made it impossible to import :class:`ChatEngine` when optional packages
+(like ``sentence_transformers``) were missing.  To keep the module lightweight,
+we now load the default components lazily when no custom implementations are
+provided.
+"""
+
+from chat_engine.modules.session import ChatSession
 
 
 class ChatEngine:
-    def __init__(self, retriever, embedder, llm, prompt_assembler):
+    def __init__(
+        self,
+        retriever=None,
+        embedder=None,
+        llm=None,
+        prompt_assembler=None,
+    ):
+        """Create a new ``ChatEngine`` instance.
+
+        Parameters are optional.  When omitted we lazily import lightweight
+        defaults, avoiding heavy dependencies when the engine is used in unit
+        tests or simple scripts.
+        """
+
+        if retriever is None:
+            from .modules.retriever import default_retriever
+
+            retriever = default_retriever
+        if embedder is None:
+            from embedding.embedder import embed_text
+
+            embedder = embed_text
+        if llm is None:
+            from language_model.language_model import generate_answer
+
+            llm = generate_answer
+        if prompt_assembler is None:
+            from .modules.prompt_assembler import default_prompt_assembler
+
+            prompt_assembler = default_prompt_assembler
+
         self.retriever = retriever
         self.embedder = embedder
         self.llm = llm
@@ -25,7 +57,6 @@ class ChatEngine:
         # Step 2: Retrieve top documents
         results = self.retriever(query_vec, top_k=3)
         history = self.session.get_recent_history()
-        
 
         # Step 3: Assemble context from retrieved documents
         context_snippets = []
@@ -35,7 +66,7 @@ class ChatEngine:
         context_text = "\n\n".join(context_snippets)
 
         # Step 4: Build final prompt and generate answer
-        prompt = self.prompt_assembler(user_query, context_text,history)
+        prompt = self.prompt_assembler(user_query, context_text, history)
         response = self.llm(prompt)
         self.session.add_assistant_message(response)
         return response
