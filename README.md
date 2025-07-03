@@ -40,6 +40,12 @@ RAG_HEITAA/
 │   └── language_model.py        # GROQ/OpenAI API interface
 ├── vector_store/
 │   └── base.py                  # Qdrant-based vector DB wrapper
+├── api/                         # FastAPI server
+│   └── app.py                   # REST & GraphQL endpoints
+├── frontend/                    # Voice chat UI
+│   └── index.html
+├── async_tasks/                 # Celery tasks
+│   └── tasks.py
 ├── main.py                      # Entry point CLI chatbot
 └── .env                         # API keys for GROQ (not committed)
 ```
@@ -120,6 +126,10 @@ overridden with the `CELERY_BROKER_URL` environment variable (defaults to
 `redis://redis:6379/0`):
 ```bash
 celery -A async_tasks.tasks worker --loglevel=info
+```
+Make sure a Redis instance is accessible at the broker URL, e.g. start one with:
+```bash
+docker run -p 6379:6379 redis
 ```
 
 
