@@ -49,8 +49,8 @@
         });
         const data = await res.json();
         responseEl.textContent = 'Assistant: ' + data.answer;
-        const utter = new SpeechSynthesisUtterance(data.answer);
-        speechSynthesis.speak(utter);
+        const msg = new SpeechSynthesisUtterance(data.answer);
+        window.speechSynthesis.speak(msg);
       } catch (err) {
         responseEl.textContent = 'Error: ' + err;
       }
