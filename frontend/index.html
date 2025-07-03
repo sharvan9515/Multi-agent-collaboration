@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG_HEITAA Voice Chat</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    button { padding: 0.5rem 1rem; font-size: 1rem; }
+    #transcript, #response { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Voice Chat Demo</h1>
+  <button id="start">Start Speaking</button>
+  <div id="transcript"></div>
+  <div id="response"></div>
+
+<script>
+  const startBtn = document.getElementById('start');
+  const transcriptEl = document.getElementById('transcript');
+  const responseEl = document.getElementById('response');
+
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    responseEl.textContent = 'SpeechRecognition is not supported in this browser.';
+  } else {
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+
+    startBtn.addEventListener('click', () => {
+      responseEl.textContent = '';
+      transcriptEl.textContent = 'Listening...';
+      recognition.start();
+    });
+
+    recognition.addEventListener('result', async (e) => {
+      const text = e.results[0][0].transcript;
+      transcriptEl.textContent = 'You: ' + text;
+      try {
+        const res = await fetch('/v1/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer secret-token'
+          },
+          body: JSON.stringify({ question: text })
+        });
+        const data = await res.json();
+        responseEl.textContent = 'Assistant: ' + data.answer;
+        const utter = new SpeechSynthesisUtterance(data.answer);
+        speechSynthesis.speak(utter);
+      } catch (err) {
+        responseEl.textContent = 'Error: ' + err;
+      }
+    });
+  }
+</script>
+</body>
+</html>

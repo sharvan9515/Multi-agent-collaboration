@@ -213,6 +213,10 @@ uvicorn api.app:app --reload
 Authenticate requests using the `API_TOKEN` environment variable. Endpoints are
 versioned under `/v1`.
 
+## 🌐 Voice Frontend
+
+Start the API as shown above and open `frontend/index.html` in a browser.
+Click **Start Speaking** and grant microphone access. Your speech will be transcribed via the Web Speech API, sent to `/v1/chat`, and the response will be displayed and spoken aloud using `speechSynthesis`.
 ---
 
 ## 🧪 Testing
