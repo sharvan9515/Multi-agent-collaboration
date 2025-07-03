@@ -91,6 +91,10 @@ Create a `.env` file in the root folder:
 GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
+If this key is missing or the Groq API is unreachable, RAG_HEITAA will
+automatically respond with a simple offline model so you can still test
+the workflow.
+
 ### 4. Start Qdrant
 
 You can use local Docker:
@@ -114,11 +118,6 @@ The application container will connect to the `qdrant` service automatically
 using the `QDRANT_URL` environment variable. If this variable is not set or the
 server cannot be reached, RAG_HEITAA will automatically start an in-memory
 Qdrant instance for local development.
-### ☸️ Kubernetes Deployment
-A Helm chart is available in `helm/` for running the API, Qdrant, and workers on Kubernetes. Install with:
-```bash
-helm install rag-heitaa helm
-```
 
 ### 🚀 Async Ingestion
 Start a Celery worker to process heavy ingestion jobs. The broker URL can be
@@ -147,7 +146,8 @@ docker run -p 6379:6379 redis
    → `prompt_assembler()` builds a chat-aware prompt with history + knowledge.
 
 4. **LLM Response**  
-   → `generate_answer()` calls the GROQ API to return a grounded answer.
+   → `generate_answer()` normally calls the GROQ API. If that fails or
+     no API key is configured, a simple offline echo model responds instead.
 
 5. **Session Tracking**  
    → `ChatSession` stores previous turns to enable follow-up questions.
@@ -221,22 +221,20 @@ uvicorn api.app:app --reload
 ```
 
 After starting the server, open `http://localhost:8000/` in your browser to use
-the bundled voice interface. Authenticate requests using the `API_TOKEN`
+the bundled HTML demo. Authenticate requests using the `API_TOKEN`
 environment variable. Endpoints are versioned under `/v1`.
 
-## 🎙️ Voice Assistant Frontend
+## 🖥️ Streamlit Frontend
 
-First start the FastAPI server:
+For a more convenient UI you can run the provided Streamlit app. This directly
+uses the `ChatEngine` so no separate API server is required:
 
 ```bash
-uvicorn api.app:app --reload
+streamlit run frontend/chat_ui.py
 ```
 
-Then open `http://localhost:8000/` in a compatible browser (Chrome or Edge).
-Click **Start Speaking** and grant microphone permission when prompted. Your
-speech will be transcribed via the Web Speech API, sent to `/v1/chat`, and the
-response will be displayed and read aloud using `speechSynthesis`. Safari and
-Firefox do not fully support the required APIs.
+Type your question in the input box and the assistant's answer will appear
+below. Each interaction is shown so you can review the conversation history.
 ---
 
 ## 🧪 Testing

@@ -4,7 +4,6 @@ This document outlines potential enhancements to turn **RAG_HEITAA** into a prod
 
 ## Scalable Backend Architecture
 - **Containerization**: Provide Docker images with Qdrant pre-configured to ensure consistent deployments.
-- **Kubernetes Support**: Publish Helm charts for clustering the vector database, API server, and worker processes.
 - **Async Processing**: Offload heavy ingestion or document parsing to asynchronous tasks (e.g., Celery or FastAPI background jobs).
 
 ## Extensible Modular Design
