@@ -39,11 +39,11 @@
       const text = e.results[0][0].transcript;
       transcriptEl.textContent = 'You: ' + text;
       try {
-        const res = await fetch('/v1/chat', {
+        const res = await fetch('http://localhost:8000/v1/chat', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer secret-token'
+            'Authorization': 'Bearer secret-token',
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify({ question: text })
         });

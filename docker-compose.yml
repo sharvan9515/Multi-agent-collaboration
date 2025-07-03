@@ -18,6 +18,8 @@ services:
     environment:
       - QDRANT_URL=http://qdrant:6333
       - CELERY_BROKER_URL=redis://redis:6379/0
+    ports:
+      - "8000:8000"
     volumes:
       - ./input_data:/app/input_data
     stdin_open: true
