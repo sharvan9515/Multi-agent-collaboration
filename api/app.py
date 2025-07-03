@@ -9,6 +9,7 @@ from chat_engine.modules.prompt_assembler import default_prompt_assembler
 from chat_engine.modules.retriever import default_retriever
 from embedding.embedder import embed_text
 from language_model.language_model import generate_answer
+from vector_store.base import init_collection
 
 security = HTTPBearer()
 
@@ -22,7 +23,12 @@ engine = ChatEngine(
 )
 
 app = FastAPI(title="RAG_HEITAA API", version="1.0")
-app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+
+
+@app.on_event("startup")
+def _startup() -> None:
+    """Ensure the Qdrant collection exists before handling requests."""
+    init_collection()
 
 
 def authenticate(creds: HTTPAuthorizationCredentials = Depends(security)):
@@ -54,3 +60,6 @@ schema = strawberry.Schema(query=Query)
 graphql_app = GraphQLRouter(schema)
 
 app.include_router(graphql_app, prefix="/v1/graphql", dependencies=[Depends(authenticate)])
+
+# Serve the frontend after API routes to avoid route conflicts
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
