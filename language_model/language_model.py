@@ -38,10 +38,12 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-if not GROQ_API_KEY:
-    raise ValueError("GROQ_API_KEY not found in environment variables. Please set it in your .env file.")
-
-logger.debug("GROQ API key loaded from environment variables")
+if GROQ_API_KEY:
+    logger.debug("GROQ API key loaded from environment variables")
+else:
+    logger.warning(
+        "GROQ_API_KEY not found. Falling back to local echo language model."
+    )
 
 
 class GroqLanguageModel(LanguageModel):
@@ -70,12 +72,32 @@ class GroqLanguageModel(LanguageModel):
             answer = result["choices"][0]["message"]["content"]
             return answer.strip()
         except Exception as e:
-            return f"❌ Error generating answer: {e}"
+            logger.error("Groq API call failed: %s", e)
+            raise
 
 
-_default_lm = GroqLanguageModel()
+class EchoLanguageModel(LanguageModel):
+    """Very simple offline language model that echoes the last user message."""
+
+    def generate(self, messages: list) -> str:
+        user_msg = next((m["content"] for m in reversed(messages) if m["role"] == "user"), "")
+        return (
+            "🤖 (offline mode) I'm unable to reach the language model service. "
+            f"You said: '{user_msg}'."
+        )
+
+
+if GROQ_API_KEY:
+    _default_lm = GroqLanguageModel()
+else:
+    _default_lm = EchoLanguageModel()
 
 
 def generate_answer(messages: list) -> str:
     """Compatibility helper that delegates to the default language model."""
-    return _default_lm.generate(messages)
+    try:
+        return _default_lm.generate(messages)
+    except Exception:
+        logger.warning("Falling back to echo model due to API failure")
+        echo_lm = EchoLanguageModel()
+        return echo_lm.generate(messages)

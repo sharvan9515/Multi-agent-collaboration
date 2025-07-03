@@ -5,7 +5,6 @@ Check completed items when implemented.
 
 ## Scalable Backend Architecture
 - [✅ ] Containerization: Provide Docker images with Qdrant pre-configured
-- [x] Kubernetes Support: Helm charts for clustering
 - [x] Async Processing for heavy ingestion or parsing
 
 ## Extensible Modular Design
