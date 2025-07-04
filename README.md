@@ -210,6 +210,12 @@ response = coordinator.run("Patient John Doe was admitted yesterday.")
 Each agent receives the current message and can store results in the shared
 `context` for the next agent.
 
+### Workflow Hooks & Events
+
+Workflows can trigger custom hooks before and after each agent runs. Subscribe
+to the `event_bus` to react to `workflow_start`, `agent_end`, or other events.
+Metrics are exposed via optional Prometheus counters in `utils.metrics`.
+
 ---
 
 ## 🔌 API Server

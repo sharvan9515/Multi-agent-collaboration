@@ -15,6 +15,9 @@ from embedding.embedder import embed_text
 from language_model.language_model import generate_answer
 from vector_store.base import init_collection
 
+import strawberry
+from strawberry.fastapi import GraphQLRouter
+
 security = HTTPBearer()
 
 API_TOKEN = os.getenv("API_TOKEN")
@@ -62,9 +65,8 @@ async def chat_endpoint(req: ChatRequest):
     return {"answer": answer, "audio": audio}
 
 
+
 # GraphQL setup using strawberry
-import strawberry
-from strawberry.fastapi import GraphQLRouter
 
 @strawberry.type
 class Query:

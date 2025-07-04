@@ -17,16 +17,15 @@ Check completed items when implemented.
 
 ## Robust Observability
 - [x] Structured Logging with correlation IDs
-- [ ] Centralized Metrics via Prometheus/Grafana
+- [x] Centralized Metrics via Prometheus/Grafana
 
-## Data Governance & Security
-- [ ] Audit Trails for document ingestion/edit events
+- [x] Audit Trails for document ingestion/edit events
 - [ ] Access Control with an identity provider
 - [ ] Encryption for data in transit and at rest
 
 ## Enterprise Integrations
-- [ ] Webhooks & Event Bus for ingestion and chat events
-- [ ] Workflow Hooks for custom pre/post processing
+- [x] Webhooks & Event Bus for ingestion and chat events
+- [x] Workflow Hooks for custom pre/post processing
 
 ## Data Ingestion Pipelines
 - [ ] Batch & Streaming Ingest from sources like S3 or queues

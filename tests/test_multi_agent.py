@@ -5,8 +5,8 @@ project_root = os.path.dirname(os.path.dirname(__file__))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from core.multi_agent import MultiAgentCoordinator
-from agents.base import Agent
+from core.multi_agent import MultiAgentCoordinator  # noqa: E402
+from agents.base import Agent  # noqa: E402
 
 
 class AgentA(Agent):

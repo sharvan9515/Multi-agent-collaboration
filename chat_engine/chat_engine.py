@@ -8,6 +8,9 @@ provided.
 """
 
 from chat_engine.modules.session import ChatSession
+from utils.event_bus import event_bus
+from utils.metrics import AGENT_RUNS
+from storage.audit_log import log_audit_event
 
 
 class ChatEngine:
@@ -49,8 +52,8 @@ class ChatEngine:
         self.session = ChatSession()
 
     def answer_query(self, user_query: str) -> str:
-
         self.session.add_user_message(user_query)
+        event_bus.emit("chat_message_received", message=user_query)
         # Step 1: Embed user query
         query_vec = self.embedder(user_query)
 
@@ -61,6 +64,8 @@ class ChatEngine:
         if not results:
             warning = "\u26a0\ufe0f I'm unable to locate relevant information."
             self.session.add_assistant_message(warning)
+            log_audit_event("chat", {"question": user_query, "answer": warning})
+            event_bus.emit("chat_response_generated", response=warning)
             return warning
 
         # Step 3: Assemble context from retrieved documents
@@ -74,4 +79,8 @@ class ChatEngine:
         prompt = self.prompt_assembler(user_query, context_text, history)
         response = self.llm(prompt)
         self.session.add_assistant_message(response)
+        if AGENT_RUNS:
+            AGENT_RUNS.labels(agent="ChatEngine").inc()
+        log_audit_event("chat", {"question": user_query, "answer": response})
+        event_bus.emit("chat_response_generated", response=response)
         return response
