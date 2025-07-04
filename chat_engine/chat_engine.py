@@ -58,6 +58,11 @@ class ChatEngine:
         results = self.retriever(query_vec, top_k=3)
         history = self.session.get_recent_history()
 
+        if not results:
+            warning = "\u26a0\ufe0f I'm unable to locate relevant information."
+            self.session.add_assistant_message(warning)
+            return warning
+
         # Step 3: Assemble context from retrieved documents
         context_snippets = []
         for res in results:

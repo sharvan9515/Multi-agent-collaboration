@@ -3,15 +3,16 @@ import argparse
 from embedding.embedder import embed_text
 from parsers.text_parser import parse_txt_folder
 from vector_store.base import init_collection, index_document
+from uuid import uuid4
 
 
 def ingest_folder(folder_path: str):
     """Parse text files in ``folder_path`` and index them in the vector store."""
     init_collection()
     docs = parse_txt_folder(folder_path)
-    for idx, doc in enumerate(docs):
+    for doc in docs:
         vector = embed_text(doc["text"])
-        index_document(doc_id=idx, vector=vector,
+        index_document(doc_id=str(uuid4()), vector=vector,
                        payload={"text": doc["text"], "source": doc["source"]})
 
 

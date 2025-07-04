@@ -1,14 +1,18 @@
 # vector_store/base.py
 from abc import ABC, abstractmethod
+import logging
+import os
+
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 from qdrant_client.http.exceptions import UnexpectedResponse
 from qdrant_client.http.models import PointStruct
-import os
 
 COLLECTION_NAME = "claims_collection"
 VECTOR_DIMENSION = 384
 DISTANCE_METRIC = Distance.COSINE
+
+logger = logging.getLogger(__name__)
 
 QDRANT_URL = os.getenv("QDRANT_URL")
 
@@ -17,7 +21,7 @@ def _create_client():
     unreachable or no URL is provided."""
 
     if not QDRANT_URL:
-        # Default to in-memory instance when no URL is specified
+        logger.warning("QDRANT_URL not set, using in-memory instance")
         return QdrantClient(location=":memory:")
 
     try:
@@ -26,8 +30,7 @@ def _create_client():
         client.get_collections()
         return client
     except Exception:
-        # Gracefully fall back to in-memory instance
-        print(f"⚠️ Could not connect to Qdrant at {QDRANT_URL}, using in-memory instance")
+        logger.warning("Could not connect to Qdrant at %s, using in-memory instance", QDRANT_URL)
         return QdrantClient(location=":memory:")
 
 
