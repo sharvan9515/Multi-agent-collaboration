@@ -3,7 +3,7 @@ prompt_assembler.py - Builds LLM prompt from query and context
 """
 
 def default_prompt_assembler(user_query, context_text, history):
-    messages = [{"role": "system", "content": "You are a helpful healthcare assistant."}]
+    messages = [{"role": "system", "content": "You are a helpful healthcare assistant. Answer in 2-3 short sentences."}]
     
     # Inject chat history
     messages += history

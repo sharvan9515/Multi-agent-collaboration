@@ -14,7 +14,9 @@ from vector_store.base import init_collection
 
 security = HTTPBearer()
 
-API_TOKEN = os.getenv("API_TOKEN", "secret-token")
+API_TOKEN = os.getenv("API_TOKEN")
+if not API_TOKEN:
+    raise RuntimeError("API_TOKEN environment variable must be set")
 
 engine = ChatEngine(
     retriever=default_retriever,

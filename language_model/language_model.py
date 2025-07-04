@@ -49,8 +49,9 @@ else:
 class GroqLanguageModel(LanguageModel):
     """Language model wrapper around the Groq API."""
 
-    def __init__(self, model: str = "llama3-8b-8192"):
+    def __init__(self, model: str = "llama3-8b-8192", max_tokens: int = 200):
         self.model = model
+        self.max_tokens = max_tokens
 
     def generate(self, messages: list) -> str:
         try:
@@ -62,7 +63,7 @@ class GroqLanguageModel(LanguageModel):
             body = {
                 "model": self.model,
                 "messages": messages,
-                "max_tokens": 512,
+                "max_tokens": self.max_tokens,
                 "temperature": 0.2,
             }
 

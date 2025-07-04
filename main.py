@@ -6,6 +6,7 @@ from language_model.language_model import generate_answer
 from vector_store.base import init_collection  # ✅ Make sure this is imported!
 from parsers.text_parser import parse_txt_folder  # ✅ Import parser
 from vector_store.base import index_document
+from uuid import uuid4
 
 
 def ingest_input_data():
@@ -13,10 +14,10 @@ def ingest_input_data():
     init_collection()
     print("📚 Parsing and indexing text documents from 'input_data/'...")
     docs = parse_txt_folder("input_data/")  # Customize folder path if needed
-    for idx, doc in enumerate(docs):
+    for doc in docs:
         vector = embed_text(doc["text"])
         index_document(
-            doc_id=idx,
+            doc_id=str(uuid4()),
             vector=vector,
             payload={"text": doc["text"], "source": doc["source"]},
         )
