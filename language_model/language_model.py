@@ -1,8 +1,15 @@
 # language_model/lm.py
 import os
 import logging
-from dotenv import load_dotenv
-import requests
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover - optional dependency
+    def load_dotenv(*args, **kwargs):
+        return False
+try:
+    import requests
+except ImportError:  # pragma: no cover - optional dependency
+    requests = None
 from .base import LanguageModel
 
 logger = logging.getLogger(__name__)
@@ -54,6 +61,8 @@ class GroqLanguageModel(LanguageModel):
         self.max_tokens = max_tokens
 
     def generate(self, messages: list) -> str:
+        if requests is None:
+            raise RuntimeError("requests package is required for Groq API calls")
         try:
             url = "https://api.groq.com/openai/v1/chat/completions"
             headers = {
