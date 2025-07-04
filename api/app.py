@@ -3,7 +3,10 @@ from fastapi import Depends, FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.concurrency import run_in_threadpool
 from pydantic import BaseModel
+
+from utils.text_to_speech import text_to_speech_base64
 
 from chat_engine.chat_engine import ChatEngine
 from chat_engine.modules.prompt_assembler import default_prompt_assembler
@@ -53,8 +56,10 @@ class ChatRequest(BaseModel):
 
 @app.post("/v1/chat", dependencies=[Depends(authenticate)])
 async def chat_endpoint(req: ChatRequest):
-    answer = engine.answer_query(req.question)
-    return {"answer": answer}
+    """Answer the user's question and return audio in a thread pool."""
+    answer = await run_in_threadpool(engine.answer_query, req.question)
+    audio = await run_in_threadpool(text_to_speech_base64, answer)
+    return {"answer": answer, "audio": audio}
 
 
 # GraphQL setup using strawberry
