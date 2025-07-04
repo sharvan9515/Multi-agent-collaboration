@@ -1,7 +1,13 @@
 # text_embedding/embedder.py
-from sentence_transformers import SentenceTransformer
+try:
+    from sentence_transformers import SentenceTransformer
+except ImportError:  # pragma: no cover - optional dependency
+    SentenceTransformer = None
 from .base import EmbeddingModel
-import numpy as np
+try:
+    import numpy as np
+except ImportError:  # pragma: no cover - optional dependency
+    np = None
 
 # Choose embedding model: MiniLM (fast) or BioBERT (domain-specific)
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
@@ -17,13 +23,13 @@ class SentenceTransformerEmbedder(EmbeddingModel):
         self.model_name = model_name
         self._model = None
 
-    def _get_model(self) -> SentenceTransformer:
-        if self._model is None:
+    def _get_model(self):
+        if self._model is None and SentenceTransformer is not None:
             try:
                 self._model = SentenceTransformer(self.model_name)
-            except Exception as e:
+            except Exception as e:  # pragma: no cover - model download failure
                 print(
-                    f"⚠️ Unable to load embedding model '{self.model_name}': {e}"\
+                    f"⚠️ Unable to load embedding model '{self.model_name}': {e}"
                 )
                 print("   Falling back to deterministic random embeddings.")
                 self._model = None
@@ -33,8 +39,12 @@ class SentenceTransformerEmbedder(EmbeddingModel):
         model = self._get_model()
         if model is None:
             # Deterministic random vector based on text hash
-            rng = np.random.RandomState(abs(hash(text)) % (2**32))
-            return rng.rand(384).tolist()
+            if np is not None:
+                rng = np.random.RandomState(abs(hash(text)) % (2**32))
+                return rng.rand(384).tolist()
+            import random
+            random.seed(abs(hash(text)) % (2**32))
+            return [random.random() for _ in range(384)]
         return model.encode(text).tolist()
 
 def embed_text(text: str):
