@@ -2,7 +2,7 @@
 retriever.py - Handles document retrieval from vector DB
 """
 
-from vector_store.base import query_vector
+from core.vector_store.base import query_vector
 
 
 def default_retriever(vector, top_k=3, metadata_filter=None):

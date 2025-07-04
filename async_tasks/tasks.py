@@ -1,8 +1,8 @@
 from celery import Celery
 import os
-from embedding.embedder import embed_text
-from parsers.text_parser import parse_txt_folder
-from vector_store.base import index_document, init_collection
+from core.embedding.embedder import embed_text
+from utilities.parsers.text_parser import parse_txt_folder
+from core.vector_store.base import index_document, init_collection
 from uuid import uuid4
 
 broker_url = os.getenv("CELERY_BROKER_URL", "redis://redis:6379/0")

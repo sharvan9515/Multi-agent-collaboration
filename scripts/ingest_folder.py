@@ -1,8 +1,8 @@
 import argparse
 
-from embedding.embedder import embed_text
-from parsers.text_parser import parse_txt_folder
-from vector_store.base import init_collection, index_document
+from core.embedding.embedder import embed_text
+from utilities.parsers.text_parser import parse_txt_folder
+from core.vector_store.base import init_collection, index_document
 from uuid import uuid4
 
 

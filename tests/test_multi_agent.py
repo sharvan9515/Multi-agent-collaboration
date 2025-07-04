@@ -6,7 +6,7 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from core.multi_agent import MultiAgentCoordinator
-from agents.base import Agent
+from core.agents.base import Agent
 
 
 class AgentA(Agent):

@@ -15,7 +15,7 @@ This document outlines potential enhancements to turn **RAG_HEITAA** into a prod
 - **Versioned APIs**: Maintain backward compatibility through explicit versioning.
 
 ## Robust Observability
-- **Structured Logging**: Include correlation IDs in `utils/logger.py` for better tracing. **(Completed)**
+- **Structured Logging**: Include correlation IDs in `utilities/logger.py` for better tracing. **(Completed)**
 - **Centralized Metrics**: Integrate Prometheus/Grafana dashboards for performance monitoring.
 
 ## Data Governance & Security

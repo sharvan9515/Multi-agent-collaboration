@@ -1,6 +1,6 @@
 # text_cleaning/deid.py
 import spacy
-from utils.logger import log
+from utilities.logger import log
 
 # Load spaCy model for NER (using a general English model; could use a clinical NER model if available)
 nlp = spacy.load("en_core_web_sm")

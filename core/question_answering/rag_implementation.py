@@ -1,7 +1,7 @@
 # question_answering/rag_qa.py
-from embedding.embedder import embed_text
-from vector_store.base import query_vector
-from language_model.language_model import generate_answer
+from core.embedding.embedder import embed_text
+from core.vector_store.base import query_vector
+from core.language_model.language_model import generate_answer
 
 def answer_query(user_query: str) -> str:
     """Retrieve relevant contexts for the query and get an answer from the language model."""

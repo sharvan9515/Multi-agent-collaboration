@@ -1,7 +1,7 @@
 from typing import List
 
-from utils.logger import log
-from agents.base import Agent
+from utilities.logger import log
+from core.agents.base import Agent
 
 
 class Workflow:

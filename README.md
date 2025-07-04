@@ -27,19 +27,20 @@ RAG_HEITAA/
 │       ├── prompt_assembler.py  # Builds prompts from chat + retrieved docs
 │       ├── retriever.py         # Vector-based document retriever
 │       └── session.py           # Maintains multi-turn chat history
-├── agents/                      # Agent implementations
-│   ├── base.py                  # Base agent interface
-│   └── rag_agent.py             # RAG agent using ChatEngine
 ├── core/
-│   └── workflow.py              # Multi‑agent workflow orchestrator
-├── utils/
-│   └── logger.py                # Common logging utility
-├── embedding/
-│   └── embedder.py              # Converts user queries into vector embeddings
-├── language_model/
-│   └── language_model.py        # GROQ/OpenAI API interface
-├── vector_store/
-│   └── base.py                  # Qdrant-based vector DB wrapper
+│   ├── agents/                  # Agent implementations
+│   ├── chat_engine/             # Orchestrates RAG flow
+│   ├── embedding/               # Vector embedding utilities
+│   ├── language_model/          # GROQ/OpenAI API interface
+│   ├── vector_store/            # Qdrant-based vector DB wrapper
+│   ├── question_answering/      # Simple RAG QA implementation
+│   ├── multi_agent.py           # Multi-agent coordinator
+│   └── workflow.py              # Sequential workflow orchestrator
+├── utilities/
+│   ├── logger.py                # Common logging utility
+│   ├── text_to_speech.py        # Helper to generate audio replies
+│   ├── parsers/                 # Folder ingestion helpers
+│   └── storage/                 # De-identification and misc tools
 ├── api/                         # FastAPI server
 │   └── app.py                   # REST & GraphQL endpoints
 ├── frontend/                    # Voice chat UI
@@ -198,9 +199,9 @@ python scripts/ingest_folder.py path/to/folder
 `RAGAgent` as needed:
 
 ```python
-from agents.deid_agent import DeidAgent
-from agents.summary_agent import SummaryAgent
-from agents.rag_agent import RAGAgent
+from core.agents.deid_agent import DeidAgent
+from core.agents.summary_agent import SummaryAgent
+from core.agents.rag_agent import RAGAgent
 from core.multi_agent import MultiAgentCoordinator
 
 coordinator = MultiAgentCoordinator([DeidAgent(), SummaryAgent(), RAGAgent()])
@@ -241,7 +242,7 @@ below. Each interaction is shown so you can review the conversation history.
 
 You can manually test:
 ```bash
-python -c "from language_model.language_model import generate_answer; print(generate_answer([...]))"
+python -c "from core.language_model.language_model import generate_answer; print(generate_answer([...]))"
 ```
 
 Or run `main.py` and ask natural questions.

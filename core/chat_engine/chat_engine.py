@@ -7,7 +7,7 @@ we now load the default components lazily when no custom implementations are
 provided.
 """
 
-from chat_engine.modules.session import ChatSession
+from core.chat_engine.modules.session import ChatSession
 
 
 class ChatEngine:
@@ -30,11 +30,11 @@ class ChatEngine:
 
             retriever = default_retriever
         if embedder is None:
-            from embedding.embedder import embed_text
+            from core.embedding.embedder import embed_text
 
             embedder = embed_text
         if llm is None:
-            from language_model.language_model import generate_answer
+            from core.language_model.language_model import generate_answer
 
             llm = generate_answer
         if prompt_assembler is None:

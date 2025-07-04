@@ -6,7 +6,7 @@ class DeidAgent(Agent):
 
     def act(self, message: str, context: dict) -> tuple[str, dict]:
         # Import lazily to avoid heavy startup cost
-        from storage.deidentifier import deidentify_text
+        from utilities.storage.deidentifier import deidentify_text
 
         cleaned = deidentify_text(message)
         context["deidentified"] = cleaned
