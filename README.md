@@ -195,17 +195,20 @@ python scripts/ingest_folder.py path/to/folder
 ## 🤖 Multi-Agent Usage
 
 `MultiAgentCoordinator` lets multiple agents collaborate using a shared
-`context` dictionary. Combine the provided `DeidAgent`, `SummaryAgent`, and
-`RAGAgent` as needed:
+`context` dictionary. Combine the provided `DeidAgent`, `SummaryAgent`,
+`RAGAgent`, and `TTSAgent` as needed:
 
 ```python
 from core.agents.deid_agent import DeidAgent
 from core.agents.summary_agent import SummaryAgent
 from core.agents.rag_agent import RAGAgent
+from core.agents.tts_agent import TTSAgent
 from core.multi_agent import MultiAgentCoordinator
 
-coordinator = MultiAgentCoordinator([DeidAgent(), SummaryAgent(), RAGAgent()])
+coordinator = MultiAgentCoordinator([DeidAgent(), SummaryAgent(), RAGAgent(), TTSAgent()])
 response = coordinator.run("Patient John Doe was admitted yesterday.")
+
+# The audio bytes are stored in ``coordinator.context['audio']``
 ```
 
 Each agent receives the current message and can store results in the shared
