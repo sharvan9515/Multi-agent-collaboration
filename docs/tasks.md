@@ -21,7 +21,7 @@ Check completed items when implemented.
 
 - [x] Audit Trails for document ingestion/edit events
 - [ ] Access Control with an identity provider
-- [ ] Encryption for data in transit and at rest
+- [🚧] Encryption for data in transit and at rest
 
 ## Enterprise Integrations
 - [x] Webhooks & Event Bus for ingestion and chat events
