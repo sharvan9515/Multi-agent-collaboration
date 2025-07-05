@@ -216,6 +216,44 @@ Workflows can trigger custom hooks before and after each agent runs. Subscribe
 to the `event_bus` to react to `workflow_start`, `agent_end`, or other events.
 Metrics are exposed via optional Prometheus counters in `utils.metrics`.
 
+## 🔒 Cybersecurity Agent
+
+The repository includes a `SecurityAgent` that validates message integrity and
+checks service health. It relies on the helpers in the `cybersecurity/`
+directory:
+
+- `encryption.py` – symmetric encryption based on Fernet.
+- `integrity.py` – SHA‑256 hashing utilities.
+- `monitor.py` – simple checks for Qdrant and the message broker.
+
+### Setup
+
+1. Install the optional dependency:
+   ```bash
+   pip install cryptography
+   ```
+2. Generate an encryption key and store it in the `ENCRYPTION_KEY` variable:
+   ```bash
+   python -c "from cybersecurity.encryption import generate_key; generate_key()"
+   ```
+
+### Usage
+
+Add the agent to your workflow so incoming messages are decrypted and verified
+before other agents run:
+
+```python
+from agents.security_agent import SecurityAgent
+from agents.rag_agent import RAGAgent
+from core.multi_agent import MultiAgentCoordinator
+
+coordinator = MultiAgentCoordinator([SecurityAgent(), RAGAgent()])
+result, ctx = coordinator.run(encrypted_message, {"hash": expected_hash})
+```
+
+The agent decrypts the input, verifies the hash when provided, checks that
+Qdrant and Redis are reachable, and then re‑encrypts the output.
+
 ---
 
 ## 🔌 API Server

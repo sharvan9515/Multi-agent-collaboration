@@ -63,3 +63,14 @@ To dive deeper into each subsystem, consider the following YouTube resources:
 - [Celery Task Queues Tutorial](https://www.youtube.com/watch?v=Z00rs1F8VZM)
 - [FastAPI Crash Course](https://www.youtube.com/watch?v=0sOvCWFmrtA)
 - [Prometheus & Grafana Basics](https://www.youtube.com/watch?v=h4Sl21AKiDg)
+
+## Security Utilities
+
+Several modules help secure the application:
+
+- `cybersecurity.encryption` provides symmetric encryption helpers.
+- `cybersecurity.integrity` offers SHA‑256 hashing for data verification.
+- `cybersecurity.monitor` checks the health of Qdrant and the message broker.
+- `agents.security_agent.SecurityAgent` combines these utilities to validate
+  messages within a workflow.
+- `storage.audit_log` writes JSON audit events with optional data hashes.
