@@ -1,5 +1,6 @@
 from typing import List
 
+
 from utils.event_bus import event_bus
 from utils.metrics import AGENT_RUNS, WORKFLOW_SECONDS
 from core.hooks import WorkflowHook
@@ -12,7 +13,22 @@ class Workflow:
     """Simple sequential workflow that runs a list of agents."""
 
     def __init__(self, agents: List[Agent], hooks: List[WorkflowHook] | None = None):
-        self.agents = agents
+        """Create a workflow, ensuring security checks precede any RAG agent."""
+        new_agents: List[Agent] = []
+        security_inserted = False
+        for agent in agents:
+            if agent.__class__.__name__ == "SecurityAgent":
+                security_inserted = True
+                new_agents.append(agent)
+                continue
+
+            if agent.__class__.__name__ == "RAGAgent" and not security_inserted:
+                from agents.security_agent import SecurityAgent
+                new_agents.append(SecurityAgent())
+                security_inserted = True
+            new_agents.append(agent)
+
+        self.agents = new_agents
         self.hooks = hooks or []
 
     def run(self, message: str) -> str:
