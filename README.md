@@ -119,6 +119,20 @@ using the `QDRANT_URL` environment variable. If this variable is not set or the
 server cannot be reached, RAG_HEITAA will automatically start an in-memory
 Qdrant instance for local development.
 
+### 5. Run the Application
+
+Launch the chatbot from the command line:
+
+```bash
+python main.py
+```
+
+Or start the API server and open `http://localhost:8000` in your browser:
+
+```bash
+uvicorn api.app:app --reload
+```
+
 ### 🚀 Async Ingestion
 Start a Celery worker to process heavy ingestion jobs. The broker URL can be
 overridden with the `CELERY_BROKER_URL` environment variable (defaults to
