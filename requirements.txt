@@ -9,6 +9,8 @@ langchain==0.1.17
 # Text processing & NLP
 spacy==3.7.4
 nltk==3.8.1
+scikit-learn==1.7.0
+gensim==4.3.3
 
 # Vector DB & backend
 qdrant-client==1.7.0

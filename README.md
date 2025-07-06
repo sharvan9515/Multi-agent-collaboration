@@ -219,9 +219,15 @@ python scripts/ingest_folder.py path/to/folder
 from agents.deid_agent import DeidAgent
 from agents.summary_agent import SummaryAgent
 from agents.rag_agent import RAGAgent
+from agents.nlp_agent import NLPAgent
 from core.multi_agent import MultiAgentCoordinator
 
-coordinator = MultiAgentCoordinator([DeidAgent(), SummaryAgent(), RAGAgent()])
+coordinator = MultiAgentCoordinator([
+    DeidAgent(),
+    SummaryAgent(),
+    NLPAgent(),
+    RAGAgent(),
+])
 response = coordinator.run("Patient John Doe was admitted yesterday.")
 ```
 
@@ -308,7 +314,8 @@ streamlit run frontend/chat_ui.py
 ```
 
 Type your question in the input box and the assistant's answer will appear
-below. Each interaction is shown so you can review the conversation history.
+below. Use the dropdown to switch between the RAG agent and the NLP agent.
+Each interaction is shown so you can review the conversation history.
 ---
 
 ## 🧪 Testing
