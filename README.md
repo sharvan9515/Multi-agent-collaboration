@@ -79,6 +79,10 @@ pip install tokenizers --prefer-binary
 The `requirements.txt` file already pins a compatible version
 (`tokenizers==0.13.3`) to avoid these build issues.
 
+The `gTTS` package is also required for the optional text-to-speech feature. It
+is included in `requirements.txt` and can be installed along with the other
+dependencies.
+
 If the SentenceTransformer model cannot be downloaded (e.g. when running
 offline), the application will fall back to deterministic random embeddings so
 that you can still test the pipeline.
