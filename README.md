@@ -224,6 +224,28 @@ response = coordinator.run("Patient John Doe was admitted yesterday.")
 Each agent receives the current message and can store results in the shared
 `context` for the next agent.
 
+For more dynamic control you can use ``LLMSupervisor`` which relies on a
+language model to pick the next agent based on the conversation so far.
+It automatically discovers agents from the ``agents`` package and lets you
+register new ones programmatically:
+
+```python
+from core import LLMSupervisor
+
+supervisor = LLMSupervisor.from_package()
+reply = supervisor.run("Summarize and anonymize this report")
+```
+
+If you need a smarter orchestrator that can summarize long histories and
+prevent runaway loops, use ``AdvancedSupervisor``:
+
+```python
+from core import AdvancedSupervisor
+
+supervisor = AdvancedSupervisor.from_package(max_turns=5)
+result = supervisor.run("Encrypt then summarize this document")
+```
+
 ### Workflow Hooks & Events
 
 Workflows can trigger custom hooks before and after each agent runs. Subscribe
