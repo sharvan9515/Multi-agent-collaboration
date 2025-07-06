@@ -1,0 +1,4 @@
+httpx
+scikit-learn
+gensim
+cryptography
