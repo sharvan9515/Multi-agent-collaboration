@@ -16,9 +16,19 @@ def answer_query(user_query: str) -> str:
         if res.payload and "text" in res.payload:
             context_snippets.append(res.payload["text"])
     context_text = "\n\n".join(context_snippets)
-    # 4. Create a prompt for the LLM that includes the context
-    prompt = (f"You are a healthcare claims assistant. Use the following claim records as context to answer the question.\n"
-              f"Context:\n{context_text}\n\nQuestion: {user_query}\nAnswer:")
-    # 5. Generate answer using OpenAI model
-    answer = generate_answer(prompt)
+    # 4. Build a chat-style message list for the language model
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are a healthcare claims assistant. "
+                "Use the following claim records as context to answer the question."
+            ),
+        },
+        {"role": "system", "content": f"Context:\n{context_text}"},
+        {"role": "user", "content": user_query},
+    ]
+
+    # 5. Generate answer using the language model
+    answer = generate_answer(messages)
     return answer
