@@ -325,6 +325,14 @@ You can manually test:
 python -c "from language_model.language_model import generate_answer; print(generate_answer([...]))"
 ```
 
+To run the automated test suite, first install the minimal test requirements:
+
+```bash
+pip install -r requirements-test.txt
+```
+
+Then execute the tests with `pytest`.
+
 Or run `main.py` and ask natural questions.
 
 ---
