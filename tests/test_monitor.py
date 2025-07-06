@@ -1,6 +1,5 @@
 import os
 import sys
-import types
 
 project_root = os.path.dirname(os.path.dirname(__file__))
 if project_root not in sys.path:
