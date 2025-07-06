@@ -1,7 +1,12 @@
 import base64
 import io
 
-from gtts import gTTS
+try:
+    from gtts import gTTS
+except Exception as exc:  # pragma: no cover - import-time
+    raise ImportError(
+        "gtts package is required for text-to-speech. Install it via `pip install gTTS`."
+    ) from exc
 
 
 def text_to_speech_base64(text: str, lang: str = "en") -> str:

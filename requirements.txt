@@ -43,4 +43,6 @@ graphene==3.3
 # SpaCy model (run separately after install)
 # python -m spacy download en_core_web_sm
 streamlit==1.33.0
+
+# Text-to-speech
 gTTS==2.5.4
