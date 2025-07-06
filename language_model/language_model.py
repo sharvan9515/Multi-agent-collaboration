@@ -76,7 +76,7 @@ class GroqLanguageModel(LanguageModel):
                 "temperature": 0.2,
             }
 
-            response = requests.post(url, headers=headers, json=body)
+            response = requests.post(url, headers=headers, json=body, timeout=10)
             response.raise_for_status()
             result = response.json()
             answer = result["choices"][0]["message"]["content"]
